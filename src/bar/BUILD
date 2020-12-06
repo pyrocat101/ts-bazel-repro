@@ -10,6 +10,9 @@ ts_project(
     emit_declaration_only = True,
     tsconfig = "//:tsconfig",
     deps = [
-        "//foo:types"
+        "//src/foo:types"
     ],
+    args = [
+        '--traceResolution'
+    ]
 )

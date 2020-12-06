@@ -1,29 +1,30 @@
 {
-  "compilerOptions": {
-      "declaration": true,
-      "emitDeclarationOnly": true,
-      "declarationMap": true,
-      "pretty": true,
-      "rootDirs": [
-          ".",
-          "./bazel-out/darwin-fastbuild/bin",
-          "./bazel-out/k8-fastbuild/bin",
-          "./bazel-out/x64_windows-fastbuild/bin",
-          "./bazel-out/darwin-dbg/bin",
-          "./bazel-out/k8-dbg/bin",
-          "./bazel-out/x64_windows-dbg/bin"
-      ],
-      "baseUrl": ".",
-      "paths": {
-          "*": [
-              "./*",
-              "./bazel-out/darwin-fastbuild/bin/*",
-              "./bazel-out/k8-fastbuild/bin/*",
-              "./bazel-out/x64_windows-fastbuild/bin/*",
-              "./bazel-out/darwin-dbg/bin/*",
-              "./bazel-out/k8-dbg/bin/*",
-              "./bazel-out/x64_windows-dbg/bin/*"
-          ]
-      }
-  },
+    "compilerOptions": {
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "declarationMap": true,
+        "pretty": true,
+        "rootDirs": [
+            "./src",
+            "./bazel-out/darwin-fastbuild/bin/src",
+            "./bazel-out/k8-fastbuild/bin/src",
+            "./bazel-out/x64_windows-fastbuild/bin/src",
+            "./bazel-out/darwin-dbg/bin/src",
+            "./bazel-out/k8-dbg/bin/src",
+            "./bazel-out/x64_windows-dbg/bin/src"
+        ],
+        "baseUrl": "./src",
+        // relative to baseUrl
+        "paths": {
+            "*": [
+                "./*",
+                "../bazel-out/darwin-fastbuild/bin/src/*",
+                "../bazel-out/k8-fastbuild/bin/src/*",
+                "../bazel-out/x64_windows-fastbuild/bin/src/*",
+                "../bazel-out/darwin-dbg/bin/src/*",
+                "../bazel-out/k8-dbg/bin/src/*",
+                "../bazel-out/x64_windows-dbg/bin/src/*",
+            ]
+        }
+    },
 }
